@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.min.css"
+      integrity="sha512-fZ1HwrDVLoUUUDGK7gZdHJ4TIMQ9KnleLU/Jgf98v1nGz9umOciIbF3zs3R5stCIY/MVMqReXgUGnxOoWUdZDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+  <body style="background-image: url(assets/img/tan-bg-texture.jpg)">
+    <div class="wrapper">
+      <div class="header-logo">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="assets/img/goodreads_logo_324-a908b923dc3ed9b7a13f3da4d1ffb2df.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="maincontent">
+        <div class="content">
+          <div class="contentbox">
+            <div class="column-right">
+              <h1>Sign in to Goodreads</h1>
+              <div class="choice-content">
+                <div class="choice">
+                  <div class="sign-with-part">
+                    <a href="#!">
+                      <button class="face-btn">
+                        <span
+                          style="
+                            background-image: url(assets/img/icon_facebook.svg);
+                            background-repeat: no-repeat;
+                          "
+                        >
+                        </span>
+                        Continue with Facebook
+                      </button>
+                    </a>
+                    <button class="amazon-btn">
+                      <span
+                        style="
+                          background-image: url(assets/img/icon-amazon-a.svg);
+                          background-repeat: no-repeat;
+                        "
+                      ></span>
+                      Continue with Amazon
+                    </button>
+                    <button class="apple-btn">
+                      <span
+                        style="
+                          background-image: url(assets/img/share_apple_circle.svg);
+                          background-repeat: no-repeat;
+                        "
+                      ></span>
+                      Continue with Apple
+                    </button>
+                    <div class="with-google">
+                      <a
+                        href="#!"
+                        style="
+                          background-image: url(assets/img/download.gif);
+                          background-repeat: no-repeat;
+                        "
+                        >Sign in with Google</a
+                      >
+                    </div>
+                  </div>
+                  <p class="gradient">
+                    <span>or</span>
+                  </p>
+                </div>
+              </div>
+              <div class="email-form">
+                <form id="login" onsubmit="login(event)">
+                  <div>
+                    <div class="inp-div">
+                      <label for="email">Email address</label>
+                      <input
+                        required
+                        class="sign-inp"
+                        type="text"
+                        id="email"
+                        placeholder="your@gmail.com"
+                        name="email"
+                      />
+                    </div>
+                    <div class="inp-div">
+                      <label for="password">Password</label>
+                      <div style="display: flex; align-items: center">
+                        <input
+                          required
+                          class="sign-inp"
+                          type="password"
+                          id="password"
+                          name="password"
+                        />
+                        <i
+                          onclick="showHiden()"
+                          ondblclick="hiden()"
+                          style="font-size: 14px; font-weight: 600"
+                          class="far fa-eye-slash"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <input type="checkbox" checked id="check" />
+                      <label for="check">Keep me signed in</label>
+                    </div>
+                    <div class="submit">
+                      <button>Sign in</button>
+                      <a href="#!" class="forgot">Forgot password</a>
+                      <div class="signUp">
+                        <span>
+                          Not a member?
+                          <a href="sign_up.html" class="forgot">Sign up</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="div-footer"
+      style="
+        background-image: url(assets/img/bookrow.jpg);
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        background-position-x: left;
+      "
+    >
+      <div class="footer">© 2021 By Abdulkhamid</div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.all.min.js"
+      integrity="sha512-EBwvoqsGaJWtUXBCosFrz2IJSBJbakIMKDGO4/1eTqPupZ06ITZ2YgJU3PKAJrqzDybFgumQcbJKWNEo0UYnbA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/sign_up.js"></script>
+  </body>
+</html>

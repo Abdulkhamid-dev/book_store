@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creat Book</title>
+    <link rel="stylesheet" href="css/add_book.css" />
+  </head>
+  <body>
+    <div class="add-book-main-content">
+      <h1>Add New Book</h1>
+      <form action="http://book.alitechbot.uz/api/books" method="POST">
+        <input
+          required
+          type="text"
+          name="title"
+          class="title"
+          placeholder="Title"
+        />
+        <input
+          required
+          type="number"
+          name="pages"
+          class="title"
+          placeholder="Pages"
+        />
+        <input
+          required
+          type="number"
+          name="price"
+          class="title"
+          placeholder="Price"
+        />
+        <input
+          required
+          type="text"
+          name="imageLink"
+          class="title"
+          placeholder="Image"
+        />
+        <input
+          required
+          type="text"
+          name="country"
+          class="title"
+          placeholder="Country"
+        />
+        <input
+          required
+          type="number"
+          name="year"
+          class="title"
+          placeholder="Year"
+        />
+        <select required name="author" id="select">
+          <option value="Dale Carnegie">Dale Carnegie</option>
+          <option value="George Bernard Show">George Bernard Show</option>
+          <option value="Mark Twain">Mark Twain</option>
+          <option value="Charles Dickens">Charles Dickens</option>
+        </select>
+        <button type="submit" class="crt_btn">Creat book</button>
+      </form>
+    </div>
+    <div class="add-book-main-content">
+      <h1>Add New Author</h1>
+      <form action="http://book.alitechbot.uz/api/authors" method="POST">
+        <input
+          required
+          type="text"
+          name="firstName"
+          class="title"
+          placeholder="Firstname"
+        />
+        <input
+          required
+          type="text"
+          name="lastName"
+          class="title"
+          placeholder="Last name"
+        />
+        <button type="submit" class="crt_btn">Creat book</button>
+      </form>
+    </div>
+  </body>
+</html>
